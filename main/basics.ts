@@ -17,6 +17,15 @@ const number2 = 2.8;
 const printRslt = true;
 const rsltPhrase = 'Result: '
 
+//note 0219_1_型推論(Type Inference)最初の変数宣言から、ある程度自動的に型を決めてくれる機能。
+// 宣言した後、型推論された型と違う型の値が入れられそうになるとErrでおこってくれる
+// 逆に、以下のように明示的に型を指定するのは、冗長であるとされて好ましくない
+// let number : number = 5;
+// しかし、以下のように宣言時に変数を初期化しない場合、なんでも受け入れるany型という定義になる
+// let any ;
+// なので、値の初期化をしない場合は、以下のように明示的に型を指定した方がよい
+// let any:string;
+
 //jsでは+の演算子で足すとき、一つ目の変数が文字列なら文字列結合をしてしまう。
 // const result = add(number1,number2);
 // console.log(result);

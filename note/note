@@ -1,0 +1,10 @@
+*2-10_型の利用
+js->動的片付け言語
+jsのコアなdata型
+number すべての数値
+string すべての文字列
+boolean ture,false
+object jsの全objectのこと。objectの型をより明確に定義する事が可能
+Array JSの全てのArray。要素の型は柔軟にも厳格にも指定出来る。
+
+
