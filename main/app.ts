@@ -1,6 +1,7 @@
 const person = {
     name: 'tanaka',
     age: 2000,
+    hobbies:['Music','Reading'],
 };
 
 console.log(person.name);
@@ -21,3 +22,16 @@ console.log(person.name);
 // こういう時はTSに型を推論させた方が、簡潔で、保守性の高い良いコードと
 // いえる。
 // もちろん、ネストしたObjectの型も定義することが出来る。
+//note 0221_1
+// 以下に文字の配列の型について試したものを記述するので、動作を見たければどうぞ
+// let favoriteActivities: string[];
+// favoriteActivities = 'Music';//配列なのに直接値を入れようとしているのでエラーになる
+for(const hobby of person.hobbies){
+    //string型配列によるfor文なので,hobbyはstringであると型推論される
+    console.log(hobby);
+    //note 0221_2 stringだから持つプロパティ、numberだから持つプロパティがある！
+    // strなら例えばtoUpperCase()というpropを持つ。(文字を全部大文字に変換するもの)
+    // console.log(hobby.toUpperCase());
+    // そして、stringはmapを持たない！自分は配列のpropだと思ってるけど、numberも持ったりする
+    // んだろうか？今度確認しておく。
+}
