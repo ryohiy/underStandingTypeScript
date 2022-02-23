@@ -6,5 +6,8 @@ string すべての文字列
 boolean ture,false
 object jsの全objectのこと。objectの型をより明確に定義する事が可能
 Array JSの全てのArray。要素の型は柔軟にも厳格にも指定出来る。
+*Tuple型　
+vanillaJSにはない、TS用の型。ほかの言語(Python等)にはあったりする
+TupleはArrayの亜種みたいので、要素の長さが固定された配列の事
 
 
