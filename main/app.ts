@@ -1,7 +1,17 @@
+//note 0226_1_alias型
+// 同じことを意味するような新しい型を定義出来る
+// これをすることで、複雑な型定義を使い回す事が出来るし、
+// 型に他の開発者が分かるような名前をつける事も良い点。
+type Combinable = number|string;
+type ConversionDescriptor = 'as-number'|'as-text';
+
+
 function combine(
-    input1: number | string
-    , input2: number | string
-    , resultConversion: 'as-number' | 'as-text'//memo literal型とUnion型の複合
+    // input1: number | string
+    input1: Combinable
+    // , input2: number | string
+    , input2: Combinable
+    , resultConversion: ConversionDescriptor//memo literal型とUnion型の複合
 ) {
     let result
     if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
