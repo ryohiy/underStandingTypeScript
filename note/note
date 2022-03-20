@@ -58,6 +58,20 @@ noEmitOnErrorをtrueにすると、tsErrがあるとコンパイルが出来な�
 厳密な型のチェックが出来るオプション（Strict TypeChecking Options）というものが
 あるけど、現時点の自分は今あるもので十分すぎる。
 
+sec4-49~
+let
+const
+var
+varはグローバルか関数スコープのどちらかしかない
+letは？
+ブロックスコープアいう概念を利用している
+
+varはがばがば過ぎる。
+
+
+
+
+
 
 
 
