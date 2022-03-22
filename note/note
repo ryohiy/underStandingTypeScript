@@ -130,7 +130,30 @@ private クラスの内部からのみアクセスが出来る。
 publicはデフォルトの状態。
 
 *63 プロパティ初期化のショートカット構文
-また今度。
+constructor等、クラス内で利用する変数をprivateのもの
+を定義したい場合、2重で定義しなければいけないのか？
+↓
+class hoge{
+private name;
+private id;
+
+constructor(name,id){
+処理が入る
+}
+
+}
+constructorに渡したい引数が増えると、変数の定義もその都度書いて
+あげないといけない？
+
+tsでは、以下のように書くことで定義する場所を1箇所で済ませる事が出来る。
+...
+constructor(private name,private id, public age){
+処理が入る
+}
+...
+一応実践した結果を「sec59-class.ts」に記述する。
+
+
 
 
 
