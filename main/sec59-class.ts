@@ -1,20 +1,19 @@
 class Department{
-    name:string;
-    constructor(n:string) {
-        this.name = n;
+    constructor(private readonly id:string ,public name:string) {
+
         //クラスがnewされた時に最初に実行される関数
         //constructorの引数はnewした時に渡す
     }
 
     describe(this:Department){
-        console.log('Department:' + this.name);
+        console.log(`Department (${this.id}:${this.name})`);
     }
 }
 
-const accounting = new Department('Accounting');
+const accounting = new Department('d1','Accounting');
 console.log(accounting);
 
 accounting.describe();
 
-const accountingCopy = {name:'DUMMY' , describe:accounting.describe}
-accountingCopy.describe();
+// const accountingCopy = {name:'DUMMY' , describe:accounting.describe}
+// accountingCopy.describe();
