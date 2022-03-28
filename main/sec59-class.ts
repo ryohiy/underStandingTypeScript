@@ -10,8 +10,19 @@ class Department{
     }
 }
 
+class ITDepartment extends Department{
+    admins:string[] = [];
+    constructor(id:string,admins:string[]) {
+        super(id,'IT');
+        this.admins = admins;
+    }
+}
+
 const accounting = new Department('d1','Accounting');
 console.log(accounting);
+
+const accountingIT = new ITDepartment('d1',["max"]);
+
 
 accounting.describe();
 
