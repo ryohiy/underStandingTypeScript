@@ -260,7 +260,7 @@ staticなプロパティはインスタンスからアクセスできないよ�
 クラス内であっても具体的なクラス名を指定してアクセスする。
 （ex:Departmentクラス内で、Department.yearでそのstaticプロパティに
 アクセスする。）
-
+sec5-69 abstract
 
 
 
