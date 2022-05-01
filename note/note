@@ -263,6 +263,10 @@ staticなプロパティはインスタンスからアクセスできないよ�
 sec5-69 abstract
 
 
+sec7 Generics
+sec7-98 keyofの制約
+関数にobjとそのプロパティを明示的に渡したい時、keyofの制約で表現する事が出来る。
+generics.tsに例を記述する。
 
 
 
